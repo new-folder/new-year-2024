@@ -1,30 +1,13 @@
-$xl: 1184px;
-$lg: 992px;
-$md: 768px;
-$sm: 496px;
-
-
 .trip {
     font-family: "Open Sans",sans-serif;
-    max-width: 976px;
-    width: 100%;
+    width: 976px;
     margin: 0 auto;
-    @media only screen and (max-width: $xl) {
-       max-width: 560px;
-    }
-    @media only screen and (max-width: $lg) {
-       max-width: 464px;
-    }
-    @media only screen and (max-width: $sm) {
-       max-width: 272px;
-    }
     &__item {
-        width: 100%;
-        padding-bottom: 125%;
+        height: 1390px;
         background-repeat: no-repeat;
         position: relative;
         background-position: center;
-        background-size: contain;
+        background-size: cover;
         &--first {            
             background-image: url(../img/bg-1.jpg);
         }
@@ -38,10 +21,10 @@ $sm: 496px;
             background-image: url(../img/bg-4.jpg);
         }
         &--fifth {            
-            background-image: url(../img/bg-5.jpg);
+            background-image: url(../img/bg-2.jpg);
         }
         &--finish {    
-            padding-bottom: 62%;       
+            height: 519px;        
             background-image: url(../img/bg-finish.jpg);
         }
     }
@@ -53,34 +36,15 @@ $sm: 496px;
 
 .penguin {
     justify-items: center;
-    width: 25.92%;
-    top: 90px;
-    left: 37.60%;
+    width: 253px;
+    height: 284px;
+    top: 126px;
+    left: 367px;
     display: grid;
-    @media only screen and (max-width: $xl) {
-        top: 35px;
-    }    
-    @media only screen and (max-width: $lg) {
-        width: 156px;
-     }  
-     @media only screen and (max-width: $sm) {
-        width: 122px;
-        left: 80px;
-        top: 10px;
-      }
     &__img {
-        width: 95%;
+        width: 220px;
+        height: 269px;
         z-index: 1;
-        animation: swing 5s 0s infinite both;
-        @media only screen and (max-width: $xl) {
-            width: 135px;
-        }
-        @media only screen and (max-width: $lg) {
-           max-width: 88px;
-        }
-        @media only screen and (max-width: $sm) {
-           max-width: 70px;
-        }
     }
     &__shadow {
         display: block;
@@ -89,20 +53,6 @@ $sm: 496px;
         background: #9fc4d6;
         border-radius: 50%;
         margin-top: -30px;
-        @media only screen and (max-width: $xl) {
-            width: 185px;
-            height: 45px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 156px;
-            height: 32px;
-            margin-top: -22px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 112px;
-            height: 24px;
-            margin-top: -16px;
-        }
     }
     &__name { 
         color: #1e600c;
@@ -116,17 +66,6 @@ $sm: 496px;
         overflow: hidden;
         display: block;
         height: fit-content;
-        @media only screen and (max-width: $xl) {
-            margin-top: 10px;
-            font-size: 30px;
-        }
-        @media only screen and (max-width: $lg) {
-            font-size: 20px;
-        }
-        @media only screen and (max-width: $sm) {
-            margin-top: 5px;
-            font-size: 16px;
-        }
         &:hover {
             text-shadow: 0px 0px 1px #9fc4d6;
             transition: all 0.4s ease 0s;
@@ -161,90 +100,27 @@ $sm: 496px;
     }
 }
 
-@keyframes swing {
-    0% {
-    -webkit-transform: rotate3d(0, 0, 1, 0);
-    transform: rotate3d(0, 0, 1, 0);
-    }
-    15% {
-    -webkit-transform: rotate3d(0, 0, 1, 0);
-    transform: rotate3d(0, 0, 1, 0);
-    }
-    30% {
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
-    transform: rotate3d(0, 0, 1, 5deg);
-    }
-    60% {
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
-    transform: rotate3d(0, 0, 1, -5deg);
-    }
-    75% {
-    -webkit-transform: rotate3d(0, 0, 1, 0);
-    transform: rotate3d(0, 0, 1, 0);
-    }
-    100% {
-    -webkit-transform: rotate3d(0, 0, 1, 0);
-    transform: rotate3d(0, 0, 1, 0);
-    }
-}
 .gifts {
     justify-items: center;
     width: 411px;
-    top: 825px;
-    left: 200px;
+    height: 446px;
+    top: 925px;
+    left: 170px;
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr; 
-    gap: 0px 0px;       
-    @media only screen and (max-width: $xl) {
-        width: 285px;
-        top: 465px;
-        left: 90px;
-    }
-    @media only screen and (max-width: $lg) {
-        top: 390px;
-    }
-    @media only screen and (max-width: $sm) {
-        top: 220px;
-        left: 40px;
-    }
+    gap: 0px 0px; 
     &__img {
         width: 265px;
-        height: auto;
+        height: 195px;
         margin-left: -80px;
-        z-index: 1;        
-        @media only screen and (max-width: $xl) {
-            width: 155px;
-            margin-left: -52px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 104px;
-            margin-left: -52px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 75px;
-            margin-left: -40px;
-        }
+        z-index: 1;
         &--green {            
             width: 170px;
-            margin-left: -213px;
-            margin-top: -55px;
-            z-index: 0;   
-            @media only screen and (max-width: $xl) {
-                width: 125px;
-                margin-left: -175px;
-                margin-top: -90px;
-            }
-            @media only screen and (max-width: $lg) {
-                width: 80px;
-                margin-left: -210px;
-                margin-top: -55px;
-            }
-            @media only screen and (max-width: $sm) {
-                width: 60px;
-                margin-left: -240px;
-                margin-top: -45px;
-            }
+            height: 260px;
+            margin-left: -242px;
+            margin-top: -104px;
+            z-index: 0;
         }
     }
     &__shadow {
@@ -253,22 +129,7 @@ $sm: 496px;
         height: 135px;
         background: #9fc4d6;
         border-radius: 50%;
-        margin-top: -120px;  
-        @media only screen and (max-width: $xl) {
-            width: 285px;
-            height: 75px;
-            margin-top: -60px;
-        }  
-        @media only screen and (max-width: $lg) {
-            width: 200px;
-            height: 55px;
-            margin-top: -45px;
-        }  
-        @media only screen and (max-width: $sm) {
-            width: 140px;
-            height: 40px;
-            margin-top: -30px;
-        }
+        margin-top: -120px;
     }
     &__name { 
         color: #1e600c;
@@ -283,18 +144,6 @@ $sm: 496px;
         overflow: hidden;
         display: block;
         height: fit-content;
-        @media only screen and (max-width: $xl) {
-            margin-top: 20px;
-            margin-left: -285px;
-            font-size: 30px;
-        }
-        @media only screen and (max-width: $lg) {
-            font-size: 20px;
-        }
-        @media only screen and (max-width: $sm) {
-            font-size: 16px;
-            margin-top: 10px;
-        }
         &:hover {
             text-shadow: 0px 0px 1px #9fc4d6;
             transition: all 0.4s ease 0s;
@@ -333,35 +182,15 @@ $sm: 496px;
 .dragon {
     justify-items: center;
     width: 253px;
-    top: 70px;
+    height: 284px;
+    top: 126px;
     left: 367px;
     display: grid;
-    @media only screen and (max-width: $xl) {
-        top: 20px;
-        left: 200px;
-    }
-    @media only screen and (max-width: $lg) {        
-        left: 180px;
-        width: 175px;
-    }
-    @media only screen and (max-width: $sm) {        
-        left: 90px;
-        top: 10px;
-        width: 140px;
-    }
     &__img {
         width: 220px;
+        height: 269px;
         z-index: 1;
-        animation: fly 5s ease 0s infinite alternate both;    
-        @media only screen and (max-width: $xl) {
-            width: 190px;
-        }  
-        @media only screen and (max-width: $lg) {
-            width: 140px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 95px;
-        }
+        animation: fly 5s ease 0s infinite alternate both;
     }
     &__shadow {
         display: block;
@@ -370,20 +199,6 @@ $sm: 496px;
         background: #9fc4d6;
         border-radius: 50%;
         margin-top: -30px;
-        @media only screen and (max-width: $xl) {
-            width: 220px;
-            height: 40px;
-            margin-top: -10px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 156px;
-            height: 32px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 112px;
-            height: 24px;
-            margin-top: -5px;
-        }
     }
     &__name { 
         color: #1e600c;
@@ -397,17 +212,6 @@ $sm: 496px;
         overflow: hidden;
         display: block;
         height: fit-content;
-        @media only screen and (max-width: $xl) {
-            margin-top: 10px;
-            font-size: 30px;
-        }
-        @media only screen and (max-width: $lg) {
-            font-size: 20px;
-        }
-        @media only screen and (max-width: $sm) {
-            font-size: 16px;
-            margin-top: 5px;
-        }
         &:hover {
             text-shadow: 0px 0px 1px #9fc4d6;
             transition: all 0.4s ease 0s;
@@ -463,38 +267,14 @@ $sm: 496px;
 .gift-hat {
     justify-items: center;
     width: 265px;
-    top: 695px;
+    height: 290px;
+    top: 845px;
     left: 350px;
-    display: grid; 
-    @media only screen and (max-width: $xl) {
-        width: 240px;
-        left: 165px;
-        top: 362px;
-    
-    } 
-    @media only screen and (max-width: $lg) {
-        width: 150px;
-        top: 340px;
-    
-    }
-    @media only screen and (max-width: $sm) {
-        width: 115px;
-        top: 180px;
-        left: 85px;
-    }
+    display: grid;
     &__img {
         width: 220px;
-        height: auto;
+        height: 269px;
         z-index: 1;
-        @media only screen and (max-width: $xl) {
-            width: 150px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 105px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 60px;
-        }
     }
     &__shadow {
         display: block;
@@ -503,21 +283,6 @@ $sm: 496px;
         background: #9fc4d6;
         border-radius: 50%;
         margin-top: -30px;
-        @media only screen and (max-width: $xl) {
-            width: 180px;
-            height: 40px;
-            margin-top: -25px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 145px;
-            height: 35px;
-            margin-top: -25px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 95px;
-            height: 20px;
-            margin-top: -10px;
-        }
     }
     &__name { 
         color: #1e600c;
@@ -531,17 +296,6 @@ $sm: 496px;
         overflow: hidden;
         display: block;
         height: fit-content;
-        @media only screen and (max-width: $xl) {
-            margin-top: 0;
-            font-size: 30px;
-        }
-        @media only screen and (max-width: $lg) {
-            font-size: 20px;
-        }
-        @media only screen and (max-width: $sm) {
-            font-size: 16px;
-            margin-top: 5px;
-        }
         &:hover {
             text-shadow: 0px 0px 1px #9fc4d6;
             transition: all 0.4s ease 0s;
@@ -578,34 +332,13 @@ $sm: 496px;
 
 .snow-maiden {
     justify-items: center;
-    top: 45px;
-    left: 430px;
+    top: 85px;
+    left: 470px;
     display: grid;
-    @media only screen and (max-width: $xl) {
-        left: 225px;
-        top: 5px;
-    }
-    @media only screen and (max-width: $lg) {
-        left: 185px;
-        top: 20px;
-    }
-    @media only screen and (max-width: $sm) {
-        left: 125px;
-        top: 0;
-    }
     &__img {
         width: 260px;
-        height: auto;
+        height: 385px;
         z-index: 1;
-        @media only screen and (max-width: $xl) {
-            width: 180px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 135px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 80px;
-        }
     }
     &__shadow {
         display: block;
@@ -614,20 +347,6 @@ $sm: 496px;
         background: #9fc4d6;
         border-radius: 50%;
         margin-top: -30px;
-        @media only screen and (max-width: $xl) {
-            width: 205px;
-            height: 40px;
-            margin-top: -22px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 156px;
-            height: 32px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 112px;
-            height: 24px;
-            margin-top: -16px;
-        }
     }
     &__name { 
         color: #1e600c;
@@ -641,17 +360,6 @@ $sm: 496px;
         overflow: hidden;
         display: block;
         height: fit-content;
-        @media only screen and (max-width: $xl) {
-            margin-top: 0;
-            font-size: 30px;
-        }
-        @media only screen and (max-width: $lg) {
-            font-size: 20px;
-        }
-        @media only screen and (max-width: $sm) {
-            font-size: 16px;
-            margin-top: 5px;
-        }
         &:hover {
             text-shadow: 0px 0px 1px #9fc4d6;
             transition: all 0.4s ease 0s;
@@ -689,34 +397,13 @@ $sm: 496px;
 .deer {
     justify-items: center;
     width: 350px;
-    top: 710px;
+    top: 845px;
     left: 255px;
-    display: grid; 
-    @media only screen and (max-width: $xl) {
-        top: 375px;
-        left: 50px;
-    }
-    @media only screen and (max-width: $lg) {
-        width: 240px;
-        top: 340px;
-    }
-    @media only screen and (max-width: $sm) {
-        width: 150px;
-        top: 170px;
-        left: 20px;
-    }
+    display: grid;
     &__img {
         width: 220px;
+        height: 269px;
         z-index: 1;
-        @media only screen and (max-width: $xl) {
-            width: 155px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 120px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 85px;
-        }
     }
     &__shadow {
         display: block;
@@ -725,20 +412,6 @@ $sm: 496px;
         background: #9fc4d6;
         border-radius: 50%;
         margin-top: -30px;
-        @media only screen and (max-width: $xl) {
-            width: 210px;
-            height: 42px;
-            margin-top: -25px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 156px;
-            height: 32px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 112px;
-            height: 24px;
-            margin-top: -16px;
-        }
     }
     &__name { 
         color: #1e600c;
@@ -752,17 +425,6 @@ $sm: 496px;
         overflow: hidden;
         display: block;
         height: fit-content;
-        @media only screen and (max-width: $xl) {
-            margin-top: 0;
-            font-size: 30px;
-        }
-        @media only screen and (max-width: $lg) {
-            font-size: 20px;
-        }
-        @media only screen and (max-width: $sm) {
-            font-size: 16px;
-            margin-top: 5px;
-        }
         &:hover {
             text-shadow: 0px 0px 1px #9fc4d6;
             transition: all 0.4s ease 0s;
@@ -800,59 +462,22 @@ $sm: 496px;
 
 .gift-colored {
     justify-items: center;
-    top: 105px;
+    top: 145px;
     left: 350px;
     display: grid;
-    @media only screen and (max-width: $xl) {
-        width: 216px;
-        top: 60px;
-        left: 176px;
-    }
-    @media only screen and (max-width: $lg) {
-        width: 175px;
-        left: 145px;
-    }
-    @media only screen and (max-width: $sm) {
-        width: 138px;
-        left: 65px;
-        top: 30px;
-    }
     &__img {
-        width: 245px;
+        width: 292px;
+        height: 340px;
         z-index: 1;
         animation: jump 2s ease 0s infinite alternate both;
-        @media only screen and (max-width: $xl) {
-            width: 150px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 105px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 65px;
-        }
     }
     &__shadow {
         display: block;
-        width: 290px;
-        height: 95px;
+        width: 380px;
+        height: 106px;
         background: #9fc4d6;
         border-radius: 50%;
         margin-top: -80px;
-        @media only screen and (max-width: $xl) {
-            width: 210px;
-            height: 65px;
-            margin-top: -50px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 156px;
-            height: 32px;
-            margin-top: -22px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 100px;
-            height: 22px;
-            margin-top: -16px;
-        }
     }
     &__name { 
         color: #1e600c;
@@ -866,17 +491,6 @@ $sm: 496px;
         overflow: hidden;
         display: block;
         height: fit-content;
-        @media only screen and (max-width: $xl) {
-            margin-top: 0;
-            font-size: 30px;
-        }
-        @media only screen and (max-width: $lg) {
-            font-size: 20px;
-        }
-        @media only screen and (max-width: $sm) {
-            font-size: 16px;
-            margin-top: 5px;
-        }
         &:hover {
             text-shadow: 0px 0px 1px #9fc4d6;
             transition: all 0.4s ease 0s;
@@ -947,36 +561,14 @@ $sm: 496px;
 .fox {
     justify-items: center;
     width: 350px;
-    top: 710px;
-    left: 175px;
+    top: 845px;
+    left: 255px;
     display: grid;
-    @media only screen and (max-width: $xl) {
-        top: 380px;
-        left: 35px;
-    }
-    @media only screen and (max-width: $lg) {
-        width: 200px;
-        top: 340px;
-        left: 65px;
-    }
-    @media only screen and (max-width: $sm) {
-        width: 130px;
-        top: 185px;
-        left: 25px;
-    }
     &__img {
         width: 285px;
+        height: 266px;
         z-index: 1;
-        transform: scale(-1, 1);
-        @media only screen and (max-width: $xl) {
-            width: 185px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 135px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 95px;
-        }
+        transform: scale(-1, 1)
     }
     &__shadow {
         display: block;
@@ -985,21 +577,6 @@ $sm: 496px;
         background: #9fc4d6;
         border-radius: 50%;
         margin-top: -30px;
-        @media only screen and (max-width: $xl) {
-            width: 210px;
-            height: 42px;
-            margin-top: -25px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 156px;
-            height: 32px;
-            margin-top: -22px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 126px;
-            height: 26px;
-            margin-top: -18px;
-        }
     }
     &__name { 
         color: #1e600c;
@@ -1013,18 +590,6 @@ $sm: 496px;
         overflow: hidden;
         display: block;
         height: fit-content;
-        @media only screen and (max-width: $xl) {
-            margin-top: 0;
-            font-size: 30px;
-            margin-top: 10px;
-        }
-        @media only screen and (max-width: $lg) {
-            font-size: 20px;
-        }
-        @media only screen and (max-width: $sm) {
-            font-size: 16px;
-            margin-top: 5px;
-        }
         &:hover {
             text-shadow: 0px 0px 1px #9fc4d6;
             transition: all 0.4s ease 0s;
@@ -1064,35 +629,14 @@ $sm: 496px;
 .polarbear {
     justify-items: center;
     width: 253px;
-    top: 25px;
-    left: 510px;
+    height: 284px;
+    top: 70px;
+    left: 470px;
     display: grid;
-    @media only screen and (max-width: $xl) {
-        left: 240px;
-        top: 5px;
-    }
-    @media only screen and (max-width: $lg) {
-        width: 200px;
-        left: 205px;
-        top: 40px;
-    }
-    @media only screen and (max-width: $sm) {
-        width: 120px;
-        left: 115px;
-        top: 0px;
-    }
     &__img {
         width: 250px;
+        height: 425px;
         z-index: 1;
-        @media only screen and (max-width: $xl) {
-            width: 140px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 105px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 70px;
-        }
     }
     &__shadow {
         display: block;
@@ -1101,21 +645,6 @@ $sm: 496px;
         background: #9fc4d6;
         border-radius: 50%;
         margin-top: -30px;
-        @media only screen and (max-width: $xl) {
-            width: 210px;
-            height: 42px;
-            margin-top: -25px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 156px;
-            height: 32px;
-            margin-top: -22px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 112px;
-            height: 24px;
-            margin-top: -16px;
-        }
     }
     &__name { 
         color: #1e600c;
@@ -1129,17 +658,6 @@ $sm: 496px;
         overflow: hidden;
         display: block;
         height: fit-content;
-        @media only screen and (max-width: $xl) {
-            margin-top: 0;
-            font-size: 30px;
-        }
-        @media only screen and (max-width: $lg) {
-            font-size: 20px;
-        }
-        @media only screen and (max-width: $sm) {
-            font-size: 16px;
-            margin-top: 5px;
-        }
         &:hover {
             text-shadow: 0px 0px 1px #9fc4d6;
             transition: all 0.4s ease 0s;
@@ -1179,36 +697,13 @@ $sm: 496px;
 .racoon {
     justify-items: center;
     width: 350px;
-    top: 705px;
-    left: 305px;
+    top: 845px;
+    left: 325px;
     display: grid;
-    @media only screen and (max-width: $xl) {
-        width: 220px;
-        top: 370px;
-        left: 170px;
-    }
-    @media only screen and (max-width: $lg) {
-        width: 175px;
-        top: 330px;
-        left: 145px;
-    }
-    @media only screen and (max-width: $sm) {
-        width: 125px;
-        top: 180px;
-        left: 78px;
-    }
     &__img {
         width: 285px;
+        height: 266px;
         z-index: 1;
-        @media only screen and (max-width: $xl) {
-            width: 130px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 100px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 60px;
-        }
     }
     &__shadow {
         display: block;
@@ -1217,21 +712,6 @@ $sm: 496px;
         background: #9fc4d6;
         border-radius: 50%;
         margin-top: -30px;
-        @media only screen and (max-width: $xl) {
-            width: 210px;
-            height: 42px;
-            margin-top: -25px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 156px;
-            height: 32px;
-            margin-top: -22px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 112px;
-            height: 24px;
-            margin-top: -16px;
-        }
     }
     &__name { 
         color: #1e600c;
@@ -1245,17 +725,6 @@ $sm: 496px;
         overflow: hidden;
         display: block;
         height: fit-content;
-        @media only screen and (max-width: $xl) {
-            margin-top: 0;
-            font-size: 30px;
-        }
-        @media only screen and (max-width: $lg) {
-            font-size: 20px;
-        }
-        @media only screen and (max-width: $sm) {
-            font-size: 16px;
-            margin-top: 5px;
-        }
         &:hover {
             text-shadow: 0px 0px 1px #9fc4d6;
             transition: all 0.4s ease 0s;
@@ -1293,24 +762,13 @@ $sm: 496px;
 .ded-moroz {
     justify-items: center;
     width: 447px;
+    height: 470px;
     top: -30px;
     left: 50%;
     transform: translateX(-50%);
     display: grid;
-    @media only screen and (max-width: $xl) {
-        width: 400px;
-        top: 0;
-    }
     &__img {
         width: 447px;
-        @media only screen and (max-width: $xl) {
-            width: 265px;
-        }
-        @media only screen and (max-width: $lg) {
-            width: 230px;
-        }
-        @media only screen and (max-width: $sm) {
-            width: 130px;
-        }
+        height: 545px;
     }
 }
